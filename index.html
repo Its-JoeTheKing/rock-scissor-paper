@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock-Paper</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="rsp">
+			<h1>ROCK</h1>
+			<h1>PAPER</h1>
+			<h1>SCISSORS</h1>
+		</div>
+		<div class="score-board">
+			<div class="score">
+				<h1>COM SCORE</h1>
+				<p class="b" id="com-score">0</p>
+			</div>
+			<div class="score">
+				<h1>YOUR SCORE</h1>
+				<p class="b" id="score">0</p>
+			</div>
+		</div>
+	</header>
+	<div class="overlay-mob" id="over-mob">
+		<img src="./images/image-rules.svg" width="90%">
+		<button class="rules-b" onclick="closeModal()">understood</button>
+	</div>
+	<div class="big-cont" id="cont">
+		<div class="cont">
+			<img src="images/bg-triangle.svg" height="60%">
+			<div onclick="play('r')" class="rock"><img style="z-index: 1;" src="images/icon-rock.svg"></div>
+			<div onclick="play('s')" class="sciss"><img style="z-index: 1;" src="images/icon-scissors.svg"></div>
+			<div onclick="play('p')" class="paper"><img style="z-index: 1;" src="images/icon-paper.svg"></div>
+		</div>
+		<div class="rules">
+			<img src="./images/image-rules.svg" height="70%">
+		</div>
+	</div>
+	<div class="overlay-1" id="red">
+		<div class="side" id="p1">
+			
+		</div>
+		<div class="result">
+			<h1 id="board">
+			</h1>
+			<button onclick="replay()">PLAY AGAIN</button>
+		</div>
+		<div class="side" id="p2">
+
+		</div>
+	</div>
+	<button class="rules-b" onclick="openModal()">rules</button>
+</body>
+<script src="script.js"></script>
+</html>
